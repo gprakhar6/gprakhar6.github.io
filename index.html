@@ -3,57 +3,10 @@
   <head>
     <title>Diffused Singularity</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <meta name="keywords" content="HTML, CSS">
     <meta name="description" content="where infinity meet zero">
-    <style>
-      :root {
-	  --height-of-aboutme: 500px;
-	  --width-of-aboutme: 15%;
-      }
-      body {
-	  background-color: black;
-      }
-      h1 {
-	  color: white;
-      }
-      a {
-	  color: white;
-      }
-      #main-content {
-	  position: relative;
-	  border: 5px outset #66FF00;
-	  height: 550px;
-      }
-      #aboutme {
-	  position: absolute;
-	  top: 0px;
-	  left: 0px;
-	  width: var(--width-of-aboutme);
-	  height: var(--height-of-aboutme);
-	  border: 5px outset #66FF00;
-	  word-wrap: break-word;	  
-	  text-align: left;
-      }
-      #aboutme p {
-	  color: #66FF00;
-      }
-      #mypic {
-	  width: 90px;
-	  height: 120px;
-	  border-radius: 10px;
-	  object-fit: cover;	  
-      }
-      #listing {
-	  position: absolute;
-	  top: 0px;
-	  right: 0px;
-	  width: calc(100% - var(--width-of-aboutme) - 5%);
-	  height: 500px;	  
-	  border: 5px outset #66FF00;
-	  color: #66FF00;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1> Prakhar's Root Node</h1>
@@ -61,18 +14,25 @@
       <div id="aboutme">
 	<img id="mypic" src="me.jpeg" alt="My Picture">
 	<p>
-	  Prakhar Gupta<br>
-	  gprakhar@iisc.ac.in<br>
-	  Indian Institute of Science
+	  Prakhar Gupta <br>
+	  Indian Institute of Science <br>
+	  gprakhar@iisc.ac.in <br>
+	  U R Rao Satellite Centre <br>
+	  prakharg@ursc.gov.in
+	  <a href="Curriculum_Vitae.pdf"> Curriculum Vitae </a> <br>
 	</p>    	
       </div>
       <div id="listing">
-	<a href="projects.html"> My Projects Page</a> <br>
-	Visualization page <br>
 	<ul>
-	  <li>Coffee</li>
-	  <li>Tea</li>
-	  <li>Milk</li>
+	  <li>
+	    <a href="projects.html"> My Projects Page</a> <br>
+	  </li>
+	  <li>
+	    <a href="https://github.com/gprakhar6/data-visualization">
+	      Data Visualization
+	    </a>
+	  </li>
+	<ul>
 	</ul>
       </div>
     </div>
